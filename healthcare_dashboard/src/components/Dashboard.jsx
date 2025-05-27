@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   return (
     <div className="d-flex flex-column p-4">
-      <div variant="h4" style={{color: "#070993"}}>
+      <div variant="h4" sx={{color: "#070993"}}>
         Dashboard
       </div>
 

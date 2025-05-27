@@ -13,11 +13,9 @@ function App() {
         <div className="main-content">
           <Header />
           <Routes>
-            {/* Add a test route to ensure content renders below Header */}
-            {/* <Route path="/" element={<div style={{ padding: '20px' }}>Welcome to the Dashboard</div>} /> */}
-            {/* Add more routes as needed */}
+            
              <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/schedule" element={<ScheduleSection />} /> */}
+             
           </Routes>
         </div>
       </div>
