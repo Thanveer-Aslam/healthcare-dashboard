@@ -1,0 +1,13 @@
+/* App.css */
+
+.app {
+  display: flex; /* Lay out Sidebar and main-content side by side */
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Take up remaining space after Sidebar */
+  display: flex;
+  flex-direction: column; /* Stack Header and Routes vertically */
+  background-color: #fff; /* White background for visibility */
+}

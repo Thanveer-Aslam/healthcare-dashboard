@@ -1,0 +1,126 @@
+/* SideBar.css */
+
+body {
+  margin: 0; /* Remove default body margin */
+}
+/* Existing styles */
+.sidebar {
+  width: 180px;
+  height: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  display: flex; /* Make sidebar a flex container */
+  flex-direction: column; /* Stack children vertically */
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo span {
+  font-weight: 700;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up remaining space */
+  justify-content: space-between; /* Push settings to bottom */
+  /* overflow: hidden; */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #999;
+  font-weight: 200;
+  cursor: pointer; /* Indicate clickable items */
+}
+
+.sidebar nav ul li:hover {
+  /* background-color: #e0e0e0; */
+  color: #333;
+}
+
+.sidebar nav ul li.active {
+  /* background-color: #e0f0ff; */
+  color: #070993;
+  font-weight: 300;
+}
+
+.sidebar nav ul li svg {
+  margin-right: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #afaeae;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.icon-box svg {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bolder;
+  width: 22px;
+  height: 22px;
+  color: whitesmoke;
+  position: relative;
+  left: 4px;
+}
+
+.health {
+  color: rgb(3, 184, 184);
+}
+
+.care {
+  color: #070993;
+}
+
+.gen {
+  color: #999;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.settings-section {
+  margin-top: auto; /* Push to bottom */
+}
+
+/* Fix: Remove bullet from Settings <ul> */
+.settings-section ul {
+  list-style: none;
+  padding: 0;
+  color: #999;
+}
+
+.tools {
+    position: relative;
+    top: 2rem;
+}

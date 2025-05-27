@@ -1,0 +1,147 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 8px 12px 8px 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #999;
+  font-size: 16px;
+}
+
+.bell {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #e0f0ff;
+  color: #070993;
+  cursor: pointer;
+}
+
+.bell:hover {
+  background-color: #d0e0ff;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar,
+.plus-icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.avatar:hover,
+.plus-icon:hover {
+  color: #070993;
+}
+
+/* Default styles for .plusicon */
+.plusicon {
+  padding: 5px; /* Default padding for consistency */
+  border-radius: 5px; /* Match the bell's rounded corners */
+  background-color: transparent; /* Default transparent background */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.plusicon:hover {
+  background-color: #e0f0ff; /* Match the bell's hover background */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .search-bell {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-container {
+    flex: 1;
+  }
+
+  .search {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .header-icons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .search {
+    max-width: 200px;
+    font-size: 12px;
+  }
+
+  .search-icon {
+    font-size: 14px;
+    left: 8px;
+  }
+
+  .bell {
+    padding: 6px;
+  }
+
+  /* plusicon {
+  padding: 10px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #e0f0ff; Try a light blue
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+} */
+
+  /* .plusicon:hover {
+    background-color: #d0e0ff;  Match the bell's hover state 
+  } */
+
+  .avatar,
+  .plus-icon {
+    font-size: 20px;
+  }
+}
